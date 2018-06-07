@@ -1,6 +1,6 @@
 create database bancoDados;
 use bancoDados;
-/*drop database bancoDados;*/
+
 create table receita (
 id_receita int auto_increment Primary key,  
 nome_receita varchar(45),    
@@ -25,7 +25,7 @@ create table composicao (
 	foreign key (cod_ingrediente) references ingrediente (id_ingrediente)
     
 );
-/*drop database bancoDados;*/
+
 insert into Ingrediente values(1,'manteiga');
 insert into Ingrediente values(2,'açucar');
 insert into Ingrediente values(3,'ovos');
